@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Leagues Hub</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: white;
+    color: red;
+    padding: 20px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0px 30px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+}
+.navbar a:hover{
+    color: red;
+}
+
+#Pushkal {
+    background-color: #f4f4f4;
+    color: red;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.league-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.league-card {
+    width: 300px; 
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.league-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.league-card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.league-card p {
+    font-size: 16px;
+}
+.navbar a.active {
+    color: red;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body >
+    <header>
+        <h1>Leagues</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html" target="_blank">Home</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                <li><a class="active"href="Leagues.html"  target="_blank">Leagues</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Pushkal">
+        <h1>Welcome to the Football Leagues Hub</h1>
+        <p>Your gateway to the world of football leagues</p>
+    </section>
+
+    <section class="national">
+        <h2>Top National Leagues</h2>
+        <div class="league-cards">
+            <div class="league-card">
+                <img src="https://blog.cpdfootball.de/wp-content/uploads/2021/09/hero-indian-super-league-teams.jpg" alt="Indian Super League">
+                <h3>Indian Super League</h3>
+                <p>The Indian Super League (ISL) is a premier football league in India, showcasing top talent from around the world and fueling the nation's passion for the beautiful game.</p>
+            </div>
+
+            <div class="league-card">
+                <img src="https://www.insideworldfootball.com/app/uploads/2020/10/I-League.jpg" alt="I-League">
+                <h3>I-League</h3>
+                <p>The I-League, deeply ingrained in the rich football culture of India, continues to captivate the hearts of millions with its enduring popularity and legacy.</p>
+            </div>
+            <div class="league-card">
+                <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-08/03/full/1691068500-5274.png" alt="Durand Cup">
+                <h3>Durand Cup</h3>
+                <p>The Durand Cup, with its storied history dating back to 1888, remains a cherished and enduring fixture in Indian football, deeply embedded in the hearts of fans across the nation</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="international">
+        <h2>Top International Leagues</h2>
+        <div class="league-cards">
+            <div class="league-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Premier_League_Logo.svg/640px-Premier_League_Logo.svg.png" alt="English Premier League">
+                <h3>English Premier League</h3>
+                <p>The EPL is known for its fast-paced and entertaining football. It attracts top talent from all over the world.</p>
+            </div>
+
+            <div class="league-card">
+                <img src="https://d11p0alxbet5ud.cloudfront.net/Pictures/480xany/6/7/8/1309678_laliga_996305.jpg" alt="La Liga">
+                <h3>La Liga</h3>
+                <p>La Liga features some of the best football clubs in Spain, including Barcelona and Real Madrid.</p>
+            </div>
+            <div class="league-card">
+                <img src="https://media.dfl.de/sites/3/2018/02/BL_Teaser_BL-Logo_Pitch_HD.jpg" alt="La Liga">
+                <h3>Bundesliga</h3>
+                <p>The Bundesliga, Germany's top-tier football league, is celebrated for its world-class football, passionate fan base, and a legacy of producing some of the sport's finest talent.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to get in touch? Contact us through the following methods:</p>
+        <ul>
+            <li>Email: contact@footballleagueshub.com</li>
+            <li>Phone: +91 87700xxxxx</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Football Leagues Hub</p>
+    </footer>
+</body>
+</html>

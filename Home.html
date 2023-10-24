@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Portfolio</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: white;
+    color: #d72020;
+    padding: 0 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0px 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.navbar a:hover{
+    color: #e74c3c;
+	transition: 0.4s;
+}
+body {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 1.2rem;
+    /* background: url("https://www.creativefabrica.com/wp-content/uploads/2021/05/06/Soccer-backgrounds-in-various-colors-Graphics-11770297-1.jpg"); */
+
+    background-size: cover;
+    /* background-attachment: white; */
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    /* background: url("https://www.creativefabrica.com/wp-content/uploads/2021/05/06/Soccer-backgrounds-in-various-colors-Graphics-11770297-1.jpg"); */
+    /* background: linear-gradient(to right, #f9fbfa, #f8faf9); */
+}
+
+.left-text {
+    flex-basis: 30%;
+}
+
+.heading {
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+
+.subheading {
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gallery {
+    flex-basis: 50%;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+}
+
+.box {
+    background-size: cover;
+    background-position: top;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+
+.row-2 {
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding-block: 20px;
+    }
+    .gallery {
+        width: 100%;
+        padding-inline: 12px;
+        grid-auto-rows: 220px;
+    }
+    .box {
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+}
+    </style>
+</head>
+<body style="background-image: url('https://img.freepik.com/premium-vector/football-soccer-background-with-big-ball-light-blue-colors_444390-17578.jpg');">
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html" target="_blank">Home</a></li>
+                <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="Leagues.html" target="_blank">Leagues</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left-text">
+            <h2 class="heading">#FootballForIndia</h2>
+            <p class="subheading">Football has the power to unite, inspire, and transform lives. Let's kickstart a new era of passion, teamwork, and excellence in India's football journey, where every kick of the ball brings us closer to our dreams.</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" id="box-1" style="background-image: url(https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1886&q=80);"></div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1628891890377-57dba2715caf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);"></div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1570498839593-e565b39455fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1935&q=80);"></div>
+            <div class="box row-2" style="background-image: url(https://images.unsplash.com/photo-1644432501788-c3e823f12211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);"></div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1489944440615-453fc2b6a9a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1923&q=80s);"></div>
+            <div class="box" style="background-image: url(https://images.unsplash.com/photo-1553778263-73a83bab9b0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);"></div>
+            <div class="box col-2" style="background-image: url(https://images.unsplash.com/photo-1600250395178-40fe752e5189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80);"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
